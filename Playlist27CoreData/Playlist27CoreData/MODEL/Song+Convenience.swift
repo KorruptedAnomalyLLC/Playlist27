@@ -15,5 +15,6 @@ extension Song {
         self.init(context: context)
         self.title = title
         self.artist = artist
+        self.playlist = playlist
     }
 }
