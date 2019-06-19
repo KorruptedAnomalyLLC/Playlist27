@@ -17,6 +17,8 @@
 		0CA6F44822BAA36500F02D6B /* Playlist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F44722BAA36500F02D6B /* Playlist+Convenience.swift */; };
 		0CA6F44A22BAA46300F02D6B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F44922BAA46300F02D6B /* CoreDataStack.swift */; };
 		0CA6F44C22BAA72E00F02D6B /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F44B22BAA72E00F02D6B /* Song+Convenience.swift */; };
+		0CA6F44E22BAAAA400F02D6B /* PlaylistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F44D22BAAAA400F02D6B /* PlaylistController.swift */; };
+		0CA6F45022BAB20500F02D6B /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA6F44F22BAB20500F02D6B /* SongController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0CA6F44722BAA36500F02D6B /* Playlist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playlist+Convenience.swift"; sourceTree = "<group>"; };
 		0CA6F44922BAA46300F02D6B /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0CA6F44B22BAA72E00F02D6B /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
+		0CA6F44D22BAAAA400F02D6B /* PlaylistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistController.swift; sourceTree = "<group>"; };
+		0CA6F44F22BAB20500F02D6B /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		0CA6F44222BA992B00F02D6B /* MODEL CONTROLLERS */ = {
 			isa = PBXGroup;
 			children = (
+				0CA6F44D22BAAAA400F02D6B /* PlaylistController.swift */,
+				0CA6F44F22BAB20500F02D6B /* SongController.swift */,
 			);
 			path = "MODEL CONTROLLERS";
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CA6F45022BAB20500F02D6B /* SongController.swift in Sources */,
 				0CA6F44422BA9D5300F02D6B /* PlaylistListTableViewController.swift in Sources */,
+				0CA6F44E22BAAAA400F02D6B /* PlaylistController.swift in Sources */,
 				0CA6F44822BAA36500F02D6B /* Playlist+Convenience.swift in Sources */,
 				0CA6F42822BA98B000F02D6B /* AppDelegate.swift in Sources */,
 				0CA6F44A22BAA46300F02D6B /* CoreDataStack.swift in Sources */,
