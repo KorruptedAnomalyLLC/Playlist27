@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Playlist List Table View Controller-->
         <scene sceneID="6mJ-dz-x7i">
             <objects>
-                <tableViewController id="OuS-M6-OYh" sceneMemberID="viewController">
+                <tableViewController id="OuS-M6-OYh" customClass="PlaylistListTableViewController" customModule="Playlist27CoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yuQ-4q-UeP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,8 +59,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Bca-lV-yKF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xdY-Zk-22n"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xdY-Zk-22n">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="OuS-M6-OYh" id="fuG-r6-jIq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playlistNameTextField" destination="yPa-nk-uvm" id="zWw-ka-rLD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fYX-Kv-e8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +76,7 @@
         <!--(playlist)-->
         <scene sceneID="PtN-wB-Hdh">
             <objects>
-                <tableViewController id="HeS-XF-kLZ" sceneMemberID="viewController">
+                <tableViewController id="HeS-XF-kLZ" customClass="SongListTableViewController" customModule="Playlist27CoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ws3-22-RUZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,12 +143,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="(playlist)" id="Ms8-r5-uVh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l1n-Et-0lH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="l1n-Et-0lH">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="HeS-XF-kLZ" id="MOB-7O-GZm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistNameTextField" destination="QVN-RO-lJc" id="DZO-73-rqw"/>
+                        <outlet property="songNameTextField" destination="pqJ-sX-UG0" id="CZ5-Lc-8ZU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lSo-bu-WHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228.985507246377" y="-72.321428571428569"/>
+            <point key="canvasLocation" x="1290" y="-72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RTv-Z6-LUw">
